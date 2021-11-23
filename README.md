@@ -13,6 +13,6 @@ The original paper mentions that it took approximately 10 hours to train the All
 
 weight_decay=1e-6 momentum=0.9 sgd;nesterov
 
-## softmax vs sigmoid
+## Softmax vs sigmoid
 
 pre-trained neural networks: You are now interested in training a network to perform a new task (e.g. object detection) on a different data set (e.g. images too but not the same as the ones you used before). Instead of repeating what you did for the first network and start from training with randomly initialized weights, you can use the weights you saved from the previous network as the initial weight values for your new experiment. Initializing the weights this way is referred to as using a pre-trained network. The first network is your pre-trained network. The second one is the network you are fine-tuning. The first task used in pre-training the network can be the same as the fine-tuning stage. The datasets used for pre-training vs. fine-tuning can also be the same, but can also be different. It's really interesting to see how pre-training on a different task and different dataset can still be transferred to a new dataset and new task that are slightly different/. Using a pre-trained network generally makes sense if both tasks or both datasets have something in common.The bigger the gap, the less effective pre-training will be. It makes little sense to pre-train a network for image classification by training it on financial data first. In this case there's too much disconnect between the pre-training and fine-tuning stages.
