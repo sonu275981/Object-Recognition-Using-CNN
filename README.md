@@ -7,7 +7,7 @@ The dataset used is the CIFAR-10 dataset, which consists of 60,000 32x32 color i
 ## DATASET PREPROCESSING
 We need to preprocess the dataset so the images and labels are in a form that Keras can ingest
 
-## normalize the images.
+## Normalize the images.
 convert our class labels to one-hot vectors. This is a standard output format for neural networks(The class labels are a single integer value (0-9). What we really want is a one-hwe'll save some time by loading pre-trained weights for the All-CNN network. Using these weights, we can evaluate the performance of the All-CNN network on the testing dataset.* 16 ot vector of length ten because it is easier for CNN to output and it avoids biases to higher numbers; CNN is numerical,ex , a class value of 6 would skew the weights a lot differently than class label 1 . For example, the class label of 6 should be denoted [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]. We can accomplish this using the np_utils.to_categorical() function*).
 The original paper mentions that it took approximately 10 hours to train the All-CNN network for 350 epochs using a modern GPU, which is considerably faster (several orders of magnitude) than it would take to train on CPU.So I used pre-trained weights
 
